@@ -1,5 +1,5 @@
 # SpoilerAlert
-![GitHub Logo](Yellow Modern Elegance Food Logo-2.png)
+![Brand logo](/Yellow Modern Elegance Food Logo-2.png)
 
 
 # Information about out app.
