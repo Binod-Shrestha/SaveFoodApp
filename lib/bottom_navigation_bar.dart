@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:save_food_app/grocery_widget.dart';
+import 'package:save_food_app/homeWidget.dart';
+import 'package:save_food_app/profile_widget.dart';
+import 'package:save_food_app/settings_widget.dart';
 
 class BottomNavigationBarWidget extends StatefulWidget {
   BottomNavigationBarWidget({Key key}) : super(key: key);
@@ -12,6 +16,12 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
+  static  List<Widget> _widgetOptions = <Widget>[
+    HomeWidget(),
+    ProfileWidget(),
+    GroceryWidget(),
+    SettingsWidget()
+  ];
 
   void _onItemTapped(int index) {
     setState(() {
@@ -21,7 +31,9 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(body: Center(
+      child: _widgetOptions.elementAt(_selectedIndex),
+    ),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
