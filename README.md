@@ -1,16 +1,7 @@
-# save_food_app
+# SpoilerAlert
+![GitHub Logo](Yellow Modern Elegance Food Logo-2.png)
 
-A new Flutter project.
 
-## Getting Started
+# Information about out app.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Introducing Spoiler Alert, a fridge management app that aims to reduce food waste across Canada and reduce grocery expenses for our users. Spoiler Alert allows users to input their food if they wish, but with an additional feature of voice activated inputs so that our users don’t have to go through typing it in. This means that while users put groceries away in their home, users would say their groceries out loud as they put them away, and our smart voice would add them into their groceries for the week.
