@@ -59,7 +59,7 @@ class _State extends State<GroceryWidget> {
                 ),
               ),
               SizedBox(
-                width: 200.0,
+                width: 160.0,
               ),
               Text(_expiryDate, style: TextStyle(fontSize: 20.0)),
             ],
