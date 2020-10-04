@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'Dashboard.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -52,24 +54,30 @@ class _MyHomePageState extends State<MyHomePage> {
       borderRadius: BorderRadius.circular(30.0),
       color: Color(0xff01A0C7),
       child: MaterialButton(
+
         minWidth: MediaQuery.of(context).size.width,
         padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-        onPressed: () {},
+        onPressed: () { Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => DashboardPage()),
+        );},
         child: Text("Login",
             textAlign: TextAlign.center,
             style: style.copyWith(
                 color: Colors.white, fontWeight: FontWeight.bold)),
+
       ),
+
     );
 
     return Scaffold(
         body: SingleChildScrollView(
           child: Center(
-
             child: Container(
               decoration: BoxDecoration(
 
                 image: DecorationImage(
+
                   image: AssetImage("assets/1.jpeg"),
                   colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.3), BlendMode.dstATop),
                   fit: BoxFit.cover,
